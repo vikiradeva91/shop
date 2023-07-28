@@ -1,0 +1,12 @@
+footer .rights {
+  background-color: #dddbd9;
+}
+
+footer .rights section {
+  display: flex;
+  justify-content: space-between;
+}
+
+footer .rights section > div {
+  padding: 10px 20px;
+}

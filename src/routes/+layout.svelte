@@ -4,79 +4,78 @@
   let visible = false;
 </script>
 
-<header>
+<header class="center-bellow" id="NavBar">
   <section>
-    <div class="header-flex">
+    <div class="cf">
+      <a href="" class="logo">
+        <h1><span class="text-primary">HOME</span> Shopp</h1>
+      </a>
       <div on:click={() => (visible = !visible)} class="E" class:show={visible}>
         <hr />
         <hr />
         <hr />
         <hr />
       </div>
-      <div class="logo">
-        <a href="/">
-          <h1>
-            <span class="text-primary">HOME</span> Shopp
-          </h1>
+    </div>
+
+    <nav class="c" class:show={visible}>
+      <div class="menu">
+        <a class="dropdown" href="/"
+          >Decor
+          <div>
+            <div><a href="/">Mirror</a></div>
+            <div><a href="/">Decorative Accessories</a></div>
+            <div><a href="/">Window Treatments </a></div>
+            <div><a href="/">Throw Pillows</a></div>
+          </div>
         </a>
+        <a class="dropdown" href="/"
+          >Rugs
+          <div>
+            <div><a href="/">Area Rugs By Size</a></div>
+            <div><a href="/">Area Rugs By Color</a></div>
+            <div><a href="/">Rugs By Type </a></div>
+            <div><a href="/">Trending Rugs</a></div>
+          </div>
+        </a>
+        <a class="dropdown" href="/"
+          >Lighting
+          <div>
+            <div><a href="/">Ceiling Lights</a></div>
+            <div><a href="/">Wall Lighting</a></div>
+            <div><a href="/">Lamps and Lamp Shades</a></div>
+            <div><a href="/">Ceiling Fans</a></div>
+            <div><a href="/">Outdoor Lighting</a></div>
+          </div>
+        </a>
+
+        <a class="about" href="/">About </a>
+        <a class="contact" href="/">Contacts</a>
       </div>
 
-      <nav class:show={visible}>
-        <div class="menu">
-          <div class="dropdown">
-            <a href="/">Decor</a>
-            <div>
-              <div><a href="/">Mirror</a></div>
-              <div><a href="/">Decorative Accessories</a></div>
-              <div><a href="/">Window Treatments </a></div>
-              <div><a href="/">Throw Pillows</a></div>
-            </div>
-          </div>
-          <div class="dropdown">
-            <a href="/">Rugs</a>
-            <div>
-              <div><a href="/">Area Rugs By Size</a></div>
-              <div><a href="/">Area Rugs By Color</a></div>
-              <div><a href="/">Rugs By Type </a></div>
-              <div><a href="/">Trending Rugs</a></div>
-            </div>
-          </div>
-          <div class="dropdown">
-            <a href="/">Lighting</a>
-            <div>
-              <div><a href="/">Ceiling Lights</a></div>
-              <div><a href="/">Wall Lighting</a></div>
-              <div><a href="/">Lamps and Lamp Shades</a></div>
-              <div><a href="/">Ceiling Fans</a></div>
-              <div><a href="/">Outdoor Lighting</a></div>
-            </div>
-          </div>
-
-          <div class=""><a href="/">About </a></div>
-          <div class=""><a href="/">Contacts</a></div>
-        </div>
-
+      <div class="header-footer">
         <div class="icon-set-header">
-          <div class="heart">
+          <a href="/">
             <picture>
               <img src="svg/heart.svg" alt="" />
             </picture>
-          </div>
-
-          <div class="user">
+          </a>
+          <a href="/">
             <picture>
               <img src="svg/user.svg" alt="" />
             </picture>
-          </div>
-
-          <div class="cart">
+          </a>
+          <a href="/">
             <picture>
               <img src="svg/cart.svg" alt="" />
             </picture>
-          </div>
+          </a>
         </div>
-      </nav>
-    </div>
+        <div class="lng">
+          <a href="/">LNG</a>
+        </div>
+      </div>
+    </nav>
   </section>
 </header>
 
@@ -84,4 +83,18 @@
   <slot />
 </main>
 
-<footer>footer</footer>
+<footer>
+  <section>
+    <div class="p2 c">
+      <a href="/" class="logo">
+        <h1><span class="text-primary">HOME</span> Shopp</h1>
+      </a>
+    </div>
+  </section>
+  <div class="rights box">
+    <section>
+      <div>Copyright © 2023 All rights reserved!</div>
+      <div><a href="/" target="_blank"><img src="svg/user.svg" /></a></div>
+    </section>
+  </div>
+</footer>
