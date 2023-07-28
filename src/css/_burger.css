@@ -1,0 +1,45 @@
+.E {
+  width: 30px;
+  height: 30px;
+  padding: 10px;
+  cursor: pointer;
+  position: relative;
+}
+
+.E hr {
+  border: none;
+  margin: 0;
+  position: absolute;
+  width: 30px;
+  height: 4px;
+  background-color: #000;
+  transition: all 0.25s ease;
+}
+
+.E hr {
+  top: 23px;
+}
+
+.E hr:first-child {
+  top: 14px;
+}
+
+.E hr:last-child {
+  top: 32px;
+}
+
+.E.show hr:first-child,
+.E.show hr:last-child {
+  width: 0;
+  top: 15px;
+  margin: 15px;
+  opacity: 0;
+}
+
+.E.show hr:nth-child(2) {
+  transform: rotate(45deg);
+}
+
+.E.show hr:nth-child(3) {
+  transform: rotate(-45deg);
+}

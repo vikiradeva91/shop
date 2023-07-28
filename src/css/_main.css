@@ -1,0 +1,76 @@
+html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  -webkit-text-size-adjust: none; /*(landscape/portrait) */
+  -webkit-tap-highlight-color: rgba(
+    0,
+    0,
+    0,
+    0
+  ); /* Remove Gray Highlight When Tapping Links in Mobile Safari */
+}
+
+body {
+  /*height: 100%; footer  (footerfix.js) */
+  margin: 0;
+  padding: 0;
+  overflow-y: scroll; /*scrolbar */
+
+  /* footerfix */
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  /* *** */
+}
+
+/* footerfix */
+body header,
+body footer,
+body main {
+  flex-shrink: 0;
+}
+
+body main {
+  flex-grow: 1;
+}
+/* *** */
+
+a,
+img,
+*:focus {
+  outline: 0; /* Removing The Dotted Outline */
+  -webkit-tap-highlight-color: rgba(
+    0,
+    0,
+    0,
+    0
+  ); /* Remove Gray Highlight When Tapping Links in Mobile Safari */
+}
+
+img {
+  border: none;
+  line-height: 0;
+  vertical-align: middle;
+  /* INFO: https://www.smashingmagazine.com/2020/03/setting-height-width-images-important-again/ */
+  max-width: 100%;
+  height: auto;
+  aspect-ratio: attr(width) / attr(height);
+}
+
+.c {
+  text-align: center;
+}
+
+.r {
+  text-align: right;
+}
+
+.hide {
+  display: none;
+}
+
+.cf {
+  overflow: auto;
+}
