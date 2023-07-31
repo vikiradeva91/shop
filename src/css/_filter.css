@@ -1,0 +1,342 @@
+.container {
+  display: grid;
+  height: 100vh;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 0.2fr 1.5fr 1.2fr 0.8fr;
+  grid-template-areas:
+    "sidebar navbar navbar navbar"
+    "sidebar main main main"
+    "sidebar main main main";
+  grid-gap: 0.2rem;
+  font-size: 12px;
+  padding: 20px;
+  position: relative;
+  border-top: 1px solid var(--gray);
+  border-bottom: 1px solid var(--gray);
+}
+
+#navbar {
+  grid-area: navbar;
+}
+
+#main {
+  grid-area: main;
+}
+
+#sidebar {
+  grid-area: sidebar;
+}
+
+@media only screen and (min-width: 920px) {
+  #sidebar a.filter-btn {
+    display: none;
+  }
+  .flex-navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .flex-navbar .sort-settings {
+    width: 192px;
+  }
+}
+
+@media only screen and (max-width: 921px) {
+  .container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 0.2fr 0.3fr repeat(3, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+  }
+
+  #navbar {
+    grid-area: 1 / 1 / 2 / 3;
+  }
+  #sidebar {
+    grid-area: 1 / 4 / 2 / 6;
+    margin-top: 73px;
+  }
+  #main {
+    grid-area: 3 / 1 / 6 / 6;
+  }
+
+  #filter {
+    display: none;
+  }
+}
+/* GRID CONSTRUCTION END */
+
+/* FILTER */
+main #filter {
+  padding-top: 30px;
+  padding-right: 30px;
+  /* padding-bottom: 150px; */
+  padding-left: 30px;
+  width: 18%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  overflow-y: scroll;
+  border-right: 1px solid #777;
+  user-select: none;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+}
+main #filter .ui-group {
+  border-bottom: 1px solid var(--gray);
+}
+main #filter .ui-group input[type="checkbox"] {
+  display: none;
+}
+main #filter .ui-group > label {
+  display: block;
+  padding: 30px 0;
+  cursor: pointer;
+}
+main #filter .ui-group > label#category-label {
+  padding-top: 0;
+}
+main #filter .ui-group > label i {
+  margin-right: 15px;
+  transition: all 0.2s ease-in-out;
+}
+
+main #filter .down::before {
+  content: "\f0d7";
+}
+
+main #filter .ui-group #category:checked + label > i {
+  transform: rotate(-90deg);
+}
+main #filter .ui-group #category:checked ~ .button-group {
+  height: 0;
+}
+main #filter .ui-group #color:checked + label > i {
+  transform: rotate(-90deg);
+}
+main #filter .ui-group #color:checked ~ .button-group {
+  height: 0;
+  margin-bottom: 0;
+}
+
+main #filter .ui-group #price:checked + label > i {
+  transform: rotate(-90deg);
+}
+main #filter .ui-group #price:checked ~ .button-group {
+  height: 0;
+  margin-bottom: 0;
+}
+
+main #filter .ui-group .button-group {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  /* height: 250px; */
+  transition: height 0.2s ease-in-out;
+}
+main #filter .ui-group .button-group div {
+  margin-bottom: 15px;
+}
+main #filter .ui-group .button-group input [type="checkbox"],
+main #filter .ui-group .button-group .form-control {
+  display: none;
+}
+main #filter .ui-group .button-group .button {
+  padding: 10px;
+  opacity: 0.5;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+main #filter .ui-group .button-group .button.is-checked {
+  opacity: 1;
+}
+main #filter .ui-group .button-group .button:hover {
+  opacity: 1;
+}
+main #filter .ui-group .button-group .color-circle {
+  margin: 10px;
+  padding: 0;
+  cursor: pointer;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  display: block;
+}
+main #filter .ui-group .button-group .color-circle#green {
+  background: #5c8464;
+}
+main #filter .ui-group .button-group .color-circle#black {
+  background: #292826;
+}
+main #filter .ui-group .button-group .color-circle#blue {
+  background: #637db7;
+}
+main #filter .ui-group .button-group .color-circle#brown {
+  background: #746354;
+}
+main #filter .ui-group .button-group .color-circle#red {
+  background: #99382d;
+}
+main #filter .ui-group .button-group .color-circle#grey {
+  background: #c9c9c9;
+}
+main #filter .ui-group .button-group .color-circle#yellow {
+  background: #fbff00;
+}
+main #filter .ui-group .button-group .color-circle#purple {
+  background: #ff00ea;
+}
+main #filter .ui-group:nth-of-type(2) .button-group {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+  height: 80px;
+  margin-bottom: 30px;
+}
+
+main #filter .form-row > div {
+  display: flex;
+  justify-content: space-between;
+}
+
+main #filter .price-label input[type="range"] {
+  width: 100%;
+}
+
+main #items {
+  padding-top: 50px;
+  padding-right: 30px;
+  padding-bottom: 80px;
+  width: 80%;
+  min-height: 100vh;
+  width: 80%;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+main #items .filter-info {
+  width: 100%;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  z-index: 1;
+}
+main #items .filter-info #filter-display-container {
+  margin-left: 30px;
+  color: var(--gray);
+  font-weight: 300;
+  display: flex;
+  flex-direction: column;
+}
+main #items .filter-info #filter-display-container #category-filter-display {
+  font-size: 2rem;
+  margin: 0;
+}
+main #items .filter-info #filter-display-container #color-filter-display {
+  margin-top: 10px;
+  margin-bottom: 0;
+}
+main #items .filter-info #filter-count-container {
+  color: var(--gray);
+  font-weight: 300;
+}
+main #items #no-items-container {
+  width: 100%;
+  height: 0;
+  overflow: hidden;
+  margin-top: 0;
+  display: flex;
+  justify-content: center;
+}
+main #items #no-items-container #no-items-text {
+  font-size: 1.2rem;
+}
+main #items .grid {
+  width: 100%;
+}
+main #items .grid .grid-item {
+  width: 33.33%;
+  height: 334.03px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 50px;
+  color: var(--gray);
+  cursor: pointer;
+  overflow: hidden;
+}
+main #items .grid .grid-item:hover .item-name,
+main #items .grid .grid-item:hover .item-price {
+  opacity: 0.5;
+}
+main #items .grid .grid-item img {
+  width: 80%;
+  max-width: 440px;
+}
+main #items .grid .grid-item .item-name {
+  width: 80%;
+  text-align: center;
+  font-weight: 300;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: all 0.2s ease-in-out;
+  line-height: 1.5;
+}
+main #items .grid .grid-item .item-price {
+  font-weight: 100;
+  font-style: italic;
+  font-size: 0.7rem;
+  margin-top: 20px;
+  letter-spacing: 1px;
+  transition: all 0.2s ease-in-out;
+}
+
+/* FILTER END */
+
+/* SELECT + MOB FILTER BUTTON*/
+
+.flex-navbar select {
+  font-size: 16px;
+  letter-spacing: 0.4px;
+  line-height: 24px;
+  font-weight: 400;
+  display: block;
+  height: 31px;
+
+  cursor: pointer;
+  position: relative;
+  text-decoration: none;
+  width: 100%;
+  margin-top: 16px;
+  border: none;
+  background: transparent;
+  border-bottom: 1px solid var(--gray);
+  padding-left: 0px;
+  padding-bottom: 5px;
+}
+
+#sidebar .filter-btn {
+  font-size: 16px;
+  letter-spacing: 0.4px;
+  line-height: 24px;
+  font-weight: 400;
+  display: block;
+  height: 31px;
+  border: 0;
+  border-bottom-color: currentcolor;
+  border-bottom-style: none;
+  border-bottom-width: 0px;
+  border-bottom: 1px solid var(--gray);
+  cursor: pointer;
+  position: relative;
+  text-decoration: none;
+  width: 100%;
+  margin-top: 43px;
+}

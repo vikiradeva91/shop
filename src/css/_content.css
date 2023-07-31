@@ -4,6 +4,19 @@ body {
     Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   font-size: 16px;
 }
+:root {
+  --rose: #d19c97;
+  --light: #edf1ff;
+  --white: #fff;
+  --gray: #7a7a7a;
+  --black: #000;
+}
+.rose {
+  color: var(--rose);
+}
+.light {
+  color: var(--light);
+}
 
 h1 {
   font-size: 36px;
@@ -80,31 +93,32 @@ hr.line {
 a.button,
 button.button {
   box-sizing: border-box;
-  display: inline-block;
+  display: inline-block !important;
   padding: 7px 24px;
 
   border: none;
   border-radius: 4px;
-  background-color: #1cc664;
+  background-color: var(--rose);
   cursor: pointer;
+  color: var(--white);
 
   font-family: Roboto, sans-serif;
   font-weight: 300;
   font-size: 14px;
   line-height: 20px;
   text-decoration: none;
-  color: var(--white);
   pointer-events: all;
 
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
+  text-align: center;
 }
 
 .logo .text-primary {
-  color: #d19c97 !important;
+  color: var(--rose) !important;
   padding: 0 1rem !important;
-  border: 1px solid #edf1ff !important;
+  border: 1px solid var(--light) !important;
   line-height: 1.2;
 }
 

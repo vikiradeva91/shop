@@ -72,7 +72,7 @@
           </a>
         </div>
         <div class="lng">
-          <a href="/">LNG</a>
+          <a href="/">BG</a> | <a href="/">EN</a>
         </div>
       </div>
     </nav>
