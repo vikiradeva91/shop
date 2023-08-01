@@ -41,11 +41,10 @@
         <a class="dropdown" href="/"
           >Lighting
           <div>
-            <div><a href="/">Ceiling Lights</a></div>
-            <div><a href="/">Wall Lighting</a></div>
-            <div><a href="/">Lamps and Lamp Shades</a></div>
-            <div><a href="/">Ceiling Fans</a></div>
-            <div><a href="/">Outdoor Lighting</a></div>
+            <div><a href="/">Applications</a></div>
+            <div><a href="/">Lanterns</a></div>
+            <div><a href="/">Chandeliers And Pendants</a></div>
+            <div><a href="/">Table Lamps</a></div>
           </div>
         </a>
 

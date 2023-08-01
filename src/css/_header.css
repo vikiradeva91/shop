@@ -1,7 +1,11 @@
-.sticky {
+header {
   position: fixed;
   top: 0;
-  width: 100%;
+  left: 0;
+  right: 0;
+  background-color: #fff;
+  z-index: 1;
+  box-shadow: 2px 2px 5px 0 rgba(0, 0, 0, 0.1);
 }
 
 header .icon-set-header > div {
@@ -107,7 +111,7 @@ header nav .dropdown > div a {
 
   header.center-bellow nav > div:not(.icon-set-header) {
     display: inline-block;
-    margin: 20px 0;
+    margin: 10px 0;
   }
 
   header.center-bellow nav .icon-set-header {

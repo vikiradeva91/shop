@@ -1,8 +1,10 @@
+<!-- NAVBAR -->
+
 <div class="container">
   <div id="navbar">
     <div class="flex-navbar">
       <div class="description">
-        <h1>Products</h1>
+        <h1>CHANDELIERS AND PENDANTS</h1>
         <span>1,872 Products</span>
       </div>
       <div class="sort-settings">
@@ -18,7 +20,383 @@
       </div>
     </div>
   </div>
-  <div id="main">Main</div>
+
+  <!-- NAVAR END -->
+
+  <!-- MAIN -->
+
+  <div id="main">
+    <section class="d-flex">
+      <div class="page-wrapper">
+        <div class="page-inner">
+          <div class="el-wrapper">
+            <div class="box-up">
+              <img class="img" src="/img/light-1.jpg" alt="light-1" />
+              <div class="img-info">
+                <div class="info-inner">
+                  <span class="p-name"
+                    >Hanging pendant wood and steel TOWNSHEND</span
+                  >
+                </div>
+                <div class="a-size">
+                  Categories :<span class="size"
+                    >NEW, CHANDELIERS AND PENDANTS</span
+                  >
+                </div>
+              </div>
+            </div>
+
+            <div class="box-down">
+              <div class="h-bg">
+                <div class="h-bg-inner" />
+              </div>
+
+              <a class="cart" href="/">
+                <span class="new-price">$198</span>
+                <span class="old-price">$298</span>
+
+                <span class="add-to-cart">
+                  <span class="txt">Add in cart</span>
+                </span>
+                <span class="heart"
+                  ><picture><img src="heart.svg" alt="" /></picture></span
+                >
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="page-wrapper">
+        <div class="page-inner">
+          <div class="el-wrapper">
+            <div class="box-up">
+              <img class="img" src="/img/light-2.jpg" alt="light-2.jpg" />
+              <div class="img-info">
+                <div class="info-inner">
+                  <span class="p-name">Black Tarbes S metal pendant lamp</span>
+                </div>
+                <div class="a-size">
+                  Categories :<span class="size"
+                    >NEW, CHANDELIERS AND PENDANTS</span
+                  >
+                </div>
+              </div>
+            </div>
+
+            <div class="box-down">
+              <div class="h-bg">
+                <div class="h-bg-inner" />
+              </div>
+
+              <a class="cart" href="/">
+                <span class="price">$87</span>
+                <span class="add-to-cart">
+                  <span class="txt">Add in cart</span>
+                </span>
+                <span class="heart"
+                  ><picture><img src="heart.svg" alt="" /></picture></span
+                >
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="page-wrapper">
+        <div class="page-inner">
+          <div class="el-wrapper">
+            <div class="box-up">
+              <img class="img" src="/img/light-3.jpg" alt="light-3" />
+              <div class="img-info">
+                <div class="info-inner">
+                  <span class="p-name">Metal pendant lamp Copper Tarbes S</span>
+                </div>
+                <div class="a-size">
+                  Categories :<span class="size"
+                    >NEW, CHANDELIERS AND PENDANTS</span
+                  >
+                </div>
+              </div>
+            </div>
+
+            <div class="box-down">
+              <div class="h-bg">
+                <div class="h-bg-inner" />
+              </div>
+
+              <a class="cart" href="/">
+                <span class="price">$82</span>
+                <span class="add-to-cart">
+                  <span class="txt">Add in cart</span>
+                </span>
+                <span class="heart"
+                  ><picture><img src="heart.svg" alt="" /></picture></span
+                >
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="page-wrapper">
+        <div class="page-inner">
+          <div class="el-wrapper">
+            <div class="box-up">
+              <img class="img" src="/img/light-4.jpg" alt="light-4" />
+              <div class="img-info">
+                <div class="info-inner">
+                  <span class="p-name">Metal hanging pendant MANIZALES</span>
+                </div>
+                <div class="a-size">
+                  Categories :<span class="size"
+                    >NEW, CHANDELIERS AND PENDANTS</span
+                  >
+                </div>
+              </div>
+            </div>
+
+            <div class="box-down">
+              <div class="h-bg">
+                <div class="h-bg-inner" />
+              </div>
+
+              <a class="cart" href="/">
+                <span class="price">$92</span>
+                <span class="add-to-cart">
+                  <span class="txt">Add in cart</span>
+                </span>
+                <span class="heart"
+                  ><picture><img src="heart.svg" alt="" /></picture></span
+                >
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="page-wrapper">
+        <div class="page-inner">
+          <div class="el-wrapper">
+            <div class="box-up">
+              <img class="img" src="/img/light-5.jpg" alt="light-5" />
+              <div class="img-info">
+                <div class="info-inner">
+                  <span class="p-name">Bocadella ceiling light</span>
+                </div>
+                <div class="a-size">
+                  Categories :<span class="size"
+                    >NEW, CHANDELIERS AND PENDANTS</span
+                  >
+                </div>
+              </div>
+            </div>
+
+            <div class="box-down">
+              <div class="h-bg">
+                <div class="h-bg-inner" />
+              </div>
+
+              <a class="cart" href="/">
+                <span class="price">$46</span>
+                <span class="add-to-cart">
+                  <span class="txt">Add in cart</span>
+                </span>
+                <span class="heart"
+                  ><picture><img src="heart.svg" alt="" /></picture></span
+                >
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="page-wrapper">
+        <div class="page-inner">
+          <div class="el-wrapper">
+            <div class="box-up">
+              <img class="img" src="/img/light-6.jpg" alt="light-6" />
+              <div class="img-info">
+                <div class="info-inner">
+                  <span class="p-name">Ceiling light Bocadella 9 lights</span>
+                </div>
+                <div class="a-size">
+                  Categories :<span class="size"
+                    >NEW, CHANDELIERS AND PENDANTS</span
+                  >
+                </div>
+              </div>
+            </div>
+
+            <div class="box-down">
+              <div class="h-bg">
+                <div class="h-bg-inner" />
+              </div>
+
+              <a class="cart" href="/">
+                <span class="price">$148</span>
+                <span class="add-to-cart">
+                  <span class="txt">Add in cart</span>
+                </span>
+                <span class="heart"
+                  ><picture><img src="heart.svg" alt="" /></picture></span
+                >
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="page-wrapper">
+        <div class="page-inner">
+          <div class="el-wrapper">
+            <div class="box-up">
+              <img class="img" src="/img/light-7.jpg" alt="light-7" />
+              <div class="img-info">
+                <div class="info-inner">
+                  <span class="p-name">Black Star pendant, 51 x 51 cm</span>
+                </div>
+                <div class="a-size">
+                  Categories :<span class="size"
+                    >NEW, CHANDELIERS AND PENDANTS</span
+                  >
+                </div>
+              </div>
+            </div>
+
+            <div class="box-down">
+              <div class="h-bg">
+                <div class="h-bg-inner" />
+              </div>
+
+              <a class="cart" href="/">
+                <span class="price">$112</span>
+                <span class="add-to-cart">
+                  <span class="txt">Add in cart</span>
+                </span>
+                <span class="heart"
+                  ><picture><img src="heart.svg" alt="" /></picture></span
+                >
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="page-wrapper">
+        <div class="page-inner">
+          <div class="el-wrapper">
+            <div class="box-up">
+              <img class="img" src="/img/light-8.jpg" alt="light-8" />
+              <div class="img-info">
+                <div class="info-inner">
+                  <span class="p-name">Black Star pendant, 24 x 20 cm</span>
+                </div>
+                <div class="a-size">
+                  Categories :<span class="size"
+                    >NEW, CHANDELIERS AND PENDANTS</span
+                  >
+                </div>
+              </div>
+            </div>
+
+            <div class="box-down">
+              <div class="h-bg">
+                <div class="h-bg-inner" />
+              </div>
+
+              <a class="cart" href="/">
+                <span class="price">$52</span>
+                <span class="add-to-cart">
+                  <span class="txt">Add in cart</span>
+                </span>
+                <span class="heart"
+                  ><picture><img src="heart.svg" alt="" /></picture></span
+                >
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="page-wrapper">
+        <div class="page-inner">
+          <div class="el-wrapper">
+            <div class="box-up">
+              <img class="img" src="/img/light-9.jpg" alt="light-9" />
+              <div class="img-info">
+                <div class="info-inner">
+                  <span class="p-name"
+                    >White Wood children's room chandelier</span
+                  >
+                </div>
+                <div class="a-size">
+                  Categories :<span class="size"
+                    >NEW, CHANDELIERS AND PENDANTS</span
+                  >
+                </div>
+              </div>
+            </div>
+
+            <div class="box-down">
+              <div class="h-bg">
+                <div class="h-bg-inner" />
+              </div>
+
+              <a class="cart" href="/">
+                <span class="price">$382</span>
+                <span class="add-to-cart">
+                  <span class="txt">Add in cart</span>
+                </span>
+                <span class="heart"
+                  ><picture><img src="heart.svg" alt="" /></picture></span
+                >
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="page-wrapper">
+        <div class="page-inner">
+          <div class="el-wrapper">
+            <div class="box-up">
+              <img class="img" src="/img/light-10.jpg" alt="light-10" />
+              <div class="img-info">
+                <div class="info-inner">
+                  <span class="p-name"> Wood children's room chandelier</span>
+                </div>
+                <div class="a-size">
+                  Categories :<span class="size"
+                    >NEW, CHANDELIERS AND PENDANTS</span
+                  >
+                </div>
+              </div>
+            </div>
+
+            <div class="box-down">
+              <div class="h-bg">
+                <div class="h-bg-inner" />
+              </div>
+
+              <a class="cart" href="/">
+                <span class="price">$268</span>
+                <span class="add-to-cart">
+                  <span class="txt">Add in cart</span>
+                </span>
+                <span class="heart"
+                  ><picture><img src="heart.svg" alt="" /></picture></span
+                >
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div style="text-align: center; margin-top: 20px;">
+      <a href="/" class="button-more">Load More</a>
+    </div>
+  </div>
+
+  <!-- MAIN END -->
+
+  <!-- SIDEBAR -->
   <div id="sidebar">
     <div>
       <a href="/" class="filter-btn"><span>Filter</span></a>
@@ -40,15 +418,15 @@
           </div>
           <div>
             <input type="checkbox" value=".new" id="new" />
-            <label class="button" for="new">New Arrivals</label>
+            <label class="button" for="new">Decor</label>
           </div>
           <div>
             <input type="checkbox" value=".women" id="women" />
-            <label class="button" for="women">Women</label>
+            <label class="button" for="women">Rugs</label>
           </div>
           <div>
             <input type="checkbox" value=".men" id="men" />
-            <label class="button" for="men">Men</label>
+            <label class="button" for="men">Lighting</label>
           </div>
         </div>
       </div>
@@ -105,10 +483,10 @@
             </div>
             <a href="/" class="button" style="margin-bottom: 30px">Apply</a>
           </div>
-          <!-- form-row.// -->
         </div>
-        <!-- card-body.// -->
       </div>
     </section>
   </div>
 </div>
+
+<!-- SIDEBAR END -->

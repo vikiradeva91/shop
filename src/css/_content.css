@@ -11,6 +11,30 @@ body {
   --gray: #7a7a7a;
   --black: #000;
 }
+
+::selection {
+  color: var(--white);
+  background: var(--rose);
+}
+
+main {
+  display: block;
+  overflow: hidden;
+}
+@media only screen and (min-width: 920px) {
+  main {
+    margin-top: 132px;
+  }
+  .logo h1 {
+    margin-bottom: 5px;
+  }
+}
+
+@media only screen and (max-width: 921px) {
+  main {
+    margin-top: 92px;
+  }
+}
 .rose {
   color: var(--rose);
 }
@@ -97,7 +121,7 @@ button.button {
   padding: 7px 24px;
 
   border: none;
-  border-radius: 4px;
+  /* border-radius: 4px; */
   background-color: var(--rose);
   cursor: pointer;
   color: var(--white);
