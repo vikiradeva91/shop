@@ -7,7 +7,7 @@
 <header class="center-bellow" id="NavBar">
   <section>
     <div class="cf">
-      <a href="" class="logo">
+      <a href="/" class="logo">
         <h1><span class="text-primary">HOME</span> Shopp</h1>
       </a>
       <div on:click={() => (visible = !visible)} class="E" class:show={visible}>
@@ -93,7 +93,8 @@
   <div class="rights box">
     <section>
       <div>Copyright © 2023 All rights reserved!</div>
-      <div><a href="/" target="_blank"><img src="svg/user.svg" /></a></div>
+      <!-- svelte-ignore a11y-missing-attribute -->
+      <div><a href="/" target="_blank"><img src="/svg/user.svg" /></a></div>
     </section>
   </div>
 </footer>
