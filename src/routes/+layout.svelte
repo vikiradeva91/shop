@@ -43,7 +43,7 @@
           <div>
             <div><a href="/">Applications</a></div>
             <div><a href="/">Lanterns</a></div>
-            <div><a href="/">Chandeliers And Pendants</a></div>
+            <div><a href="/">Chandeliers</a></div>
             <div><a href="/">Table Lamps</a></div>
           </div>
         </a>

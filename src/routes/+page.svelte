@@ -4,7 +4,7 @@
   <div id="navbar">
     <div class="flex-navbar">
       <div class="description">
-        <h1>CHANDELIERS AND PENDANTS</h1>
+        <h1>CHANDELIERS</h1>
         <span>1,872 Products</span>
       </div>
       <div class="sort-settings">
@@ -59,7 +59,7 @@
                   <span class="txt">Add in cart</span>
                 </span>
                 <span class="heart"
-                  ><picture><img src="heart.svg" alt="" /></picture></span
+                  ><picture><img src="/svg/heart.svg" alt="" /></picture></span
                 >
               </a>
             </div>
@@ -95,7 +95,7 @@
                   <span class="txt">Add in cart</span>
                 </span>
                 <span class="heart"
-                  ><picture><img src="heart.svg" alt="" /></picture></span
+                  ><picture><img src="/svg/heart.svg" alt="" /></picture></span
                 >
               </a>
             </div>
@@ -131,7 +131,7 @@
                   <span class="txt">Add in cart</span>
                 </span>
                 <span class="heart"
-                  ><picture><img src="heart.svg" alt="" /></picture></span
+                  ><picture><img src="/svg/heart.svg" alt="" /></picture></span
                 >
               </a>
             </div>
@@ -167,7 +167,7 @@
                   <span class="txt">Add in cart</span>
                 </span>
                 <span class="heart"
-                  ><picture><img src="heart.svg" alt="" /></picture></span
+                  ><picture><img src="/svg/heart.svg" alt="" /></picture></span
                 >
               </a>
             </div>
@@ -203,7 +203,7 @@
                   <span class="txt">Add in cart</span>
                 </span>
                 <span class="heart"
-                  ><picture><img src="heart.svg" alt="" /></picture></span
+                  ><picture><img src="/svg/heart.svg" alt="" /></picture></span
                 >
               </a>
             </div>
@@ -239,7 +239,7 @@
                   <span class="txt">Add in cart</span>
                 </span>
                 <span class="heart"
-                  ><picture><img src="heart.svg" alt="" /></picture></span
+                  ><picture><img src="/svg/heart.svg" alt="" /></picture></span
                 >
               </a>
             </div>
@@ -274,7 +274,7 @@
                   <span class="txt">Add in cart</span>
                 </span>
                 <span class="heart"
-                  ><picture><img src="heart.svg" alt="" /></picture></span
+                  ><picture><img src="/svg/heart.svg" alt="" /></picture></span
                 >
               </a>
             </div>
@@ -309,7 +309,7 @@
                   <span class="txt">Add in cart</span>
                 </span>
                 <span class="heart"
-                  ><picture><img src="heart.svg" alt="" /></picture></span
+                  ><picture><img src="/svg/heart.svg" alt="" /></picture></span
                 >
               </a>
             </div>
@@ -346,7 +346,7 @@
                   <span class="txt">Add in cart</span>
                 </span>
                 <span class="heart"
-                  ><picture><img src="heart.svg" alt="" /></picture></span
+                  ><picture><img src="/svg/heart.svg" alt="" /></picture></span
                 >
               </a>
             </div>
@@ -381,7 +381,7 @@
                   <span class="txt">Add in cart</span>
                 </span>
                 <span class="heart"
-                  ><picture><img src="heart.svg" alt="" /></picture></span
+                  ><picture><img src="/svg/heart.svg" alt="" /></picture></span
                 >
               </a>
             </div>
