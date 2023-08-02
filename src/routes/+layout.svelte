@@ -88,6 +88,14 @@
       <a href="/" class="logo">
         <h1><span class="text-primary">HOME</span> Shopp</h1>
       </a>
+      <div class="flex-footer">
+        <div>
+          <a href="/">Privacy Policy</a>
+        </div>
+        <div>
+          <a href="/">Contact Us</a>
+        </div>
+      </div>
     </div>
   </section>
   <div class="rights box">

@@ -10,3 +10,13 @@ footer .rights section {
 footer .rights section > div {
   padding: 10px 20px;
 }
+
+footer .flex-footer {
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+}
+
+footer .flex-footer div {
+  padding: 0 15px;
+}

@@ -18,6 +18,10 @@ header nav .menu a {
   padding: 10px;
 }
 
+header nav .menu a:hover {
+  color: var(--rose);
+}
+
 .show {
   display: block;
 }
@@ -35,11 +39,6 @@ header.center-bellow section > div {
 /*dropdown menu*/
 
 header nav .dropdown {
-  background-image: url(/svg/down.svg);
-  background-repeat: no-repeat;
-  background-position: right 3px;
-  /* padding-right: 14px; */
-  background-size: 40px;
   cursor: pointer;
 }
 
