@@ -8,7 +8,7 @@
   <section>
     <div class="cf">
       <a href="/" class="logo">
-        <h1><span class="text-primary">HOME</span> Shopp</h1>
+        <h1><span class="text-primary">LUMINA</span> Shopp</h1>
       </a>
       <div on:click={() => (visible = !visible)} class="E" class:show={visible}>
         <hr />
@@ -20,7 +20,7 @@
 
     <nav class="c" class:show={visible}>
       <div class="menu">
-        <a class="dropdown" href="/"
+        <!-- <a class="dropdown" href="/"
           >Decor
           <div>
             <div><a href="/">Mirror</a></div>
@@ -37,9 +37,9 @@
             <div><a href="/">Rugs By Type </a></div>
             <div><a href="/">Trending Rugs</a></div>
           </div>
-        </a>
+        </a> -->
         <a class="dropdown" href="/"
-          >Lighting
+          >Categories
           <div>
             <div><a href="/">Applications</a></div>
             <div><a href="/">Lanterns</a></div>
@@ -86,7 +86,7 @@
   <section>
     <div class="p2 c">
       <a href="/" class="logo">
-        <h1><span class="text-primary">HOME</span> Shopp</h1>
+        <h1><span class="text-primary">LUMINA</span> Shopp</h1>
       </a>
       <div class="flex-footer">
         <div>

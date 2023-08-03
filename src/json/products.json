@@ -1,0 +1,77 @@
+[
+  {
+    "name": "Hanging pendant wood and steel TOWNSHEND",
+    "category": "chandeliers",
+    "price": 198,
+    "old-price": 298,
+    "image": "light-1.jpg",
+    "color": "brown"
+  },
+
+  {
+    "name": "Black Tarbes S metal pendant lamp",
+    "category": "chandeliers",
+    "price": 87,
+    "image": "light-2.jpg",
+    "color": "black"
+  },
+  {
+    "name": "Metal pendant lamp Copper Tarbes S",
+    "category": "chandeliers",
+    "price": 82,
+    "image": "light-3.jpg",
+    "color": "yellow"
+  },
+  {
+    "name": "Metal hanging pendant MANIZALES",
+    "category": "chandeliers",
+    "price": 92,
+    "image": "light-4.jpg",
+    "color": "yellow"
+  },
+  {
+    "name": "Bocadella ceiling light",
+    "category": "chandeliers",
+    "price": 46,
+    "image": "light-5.jpg",
+    "color": "black"
+  },
+  {
+    "name": "Ceiling light Bocadella 9 lights",
+    "category": "chandeliers",
+    "price": 148,
+    "old-price": 98,
+    "image": "light-6.jpg",
+    "color": "black"
+  },
+  {
+    "name": "Black Star pendant, 51 x 51 cm",
+    "category": "chandeliers",
+    "price": 112,
+    "image": "light-7.jpg",
+    "color": "black"
+  },
+  {
+    "name": "Black Star pendant, 24 x 20 cm",
+    "category": "chandeliers",
+    "price": 52,
+    "image": "light-8.jpg",
+    "color": "black"
+  },
+  {
+    "name": "White Wood children's room chandelier",
+    "category": "chandeliers",
+    "price": 382,
+    "old-price": 298,
+    "image": "light-9.jpg",
+    "color": "white"
+  },
+  {
+    "name": "Wood children's room chandelier",
+    "category": "chandeliers",
+    "price": 268,
+    "old-price": 168,
+    "image": "light-10.jpg",
+    "color": "brown"
+  }
+]

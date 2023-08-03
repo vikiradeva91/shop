@@ -169,30 +169,21 @@ main #filter .ui-group .button-group .color-circle {
   height: 20px;
   display: block;
 }
-main #filter .ui-group .button-group .color-circle#green {
-  background: #5c8464;
-}
+
 main #filter .ui-group .button-group .color-circle#black {
   background: #292826;
-}
-main #filter .ui-group .button-group .color-circle#blue {
-  background: #637db7;
 }
 main #filter .ui-group .button-group .color-circle#brown {
   background: #746354;
 }
-main #filter .ui-group .button-group .color-circle#red {
-  background: #99382d;
-}
-main #filter .ui-group .button-group .color-circle#grey {
-  background: #c9c9c9;
+main #filter .ui-group .button-group .color-circle#white {
+  background: #fff;
+  border: 1px solid #000;
 }
 main #filter .ui-group .button-group .color-circle#yellow {
   background: #fbff00;
 }
-main #filter .ui-group .button-group .color-circle#purple {
-  background: #ff00ea;
-}
+
 main #filter .ui-group:nth-of-type(2) .button-group {
   display: flex;
   flex-direction: row;
