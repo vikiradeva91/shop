@@ -4,6 +4,13 @@
   let visible = false;
 </script>
 
+<svelte:head>
+  <script
+    src="https://kit.fontawesome.com/5a4b785617.js"
+    crossorigin="anonymous"
+  ></script>
+</svelte:head>
+
 <header class="center-bellow" id="NavBar">
   <section>
     <div class="cf">
@@ -41,7 +48,9 @@
         <a class="dropdown" href="/"
           >Categories
           <div>
-            <div><a href="/">Applications</a></div>
+            <div>
+              <a href="/">Applications</a>
+            </div>
             <div><a href="/">Lanterns</a></div>
             <div><a href="/">Chandeliers</a></div>
             <div><a href="/">Table Lamps</a></div>

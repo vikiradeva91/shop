@@ -73,5 +73,148 @@
     "old-price": 168,
     "image": "light-10.jpg",
     "color": "brown"
+  },
+  {
+    "name": "Copper Chester steel lantern",
+    "category": "lanterns",
+    "price": 218,
+    "image": "light-11.png",
+    "color": "black"
+  },
+  {
+    "name": "Back in Town lantern",
+    "category": "lanterns",
+    "price": 188,
+    "image": "light-12.jpg",
+    "color": "black"
+  },
+  {
+    "name": "Black Tunnel lantern",
+    "category": "lanterns",
+    "price": 282,
+    "image": "light-13.jpg",
+    "color": "black"
+  },
+  {
+    "name": "Carlton lamp",
+    "category": "lanterns",
+    "price": 204,
+    "old-price": 150,
+    "image": "light-14.png",
+    "color": "black"
+  },
+  {
+    "name": "Night Light lamp, h=147 cm",
+    "category": "lanterns",
+    "price": 246,
+    "image": "light-15.jpg",
+    "color": "black"
+  },
+  {
+    "name": "Table lamp TOWNSHEND 5, h=50 cm",
+    "category": "table-lamps",
+    "price": 89.9,
+    "image": "light-16.jpg",
+    "color": "black"
+  },
+  {
+    "name": "Table lamp Black Nimlet, h=51 cm",
+    "category": "table-lamps",
+    "price": 148,
+    "old-price": 68,
+    "image": "light-17.jpg",
+    "color": "black"
+  },
+  {
+    "name": "Gold Shades table lamp",
+    "category": "table-lamps",
+    "price": 58,
+    "image": "light-18.jpg",
+    "color": "yellow"
+  },
+  {
+    "name": "Black Shades table lamp",
+    "category": "table-lamps",
+    "price": 58,
+    "image": "light-19.jpg",
+    "color": "black"
+  },
+  {
+    "name": "Copper Shades table lamp",
+    "category": "table-lamps",
+    "price": 58,
+    "image": "light-20.jpg",
+    "color": "brown"
+  },
+  {
+    "name": "Pink Bear nursery lamp",
+    "category": "applications",
+    "price": 89.9,
+    "image": "light-21.jpg",
+    "color": "white"
+  },
+  {
+    "name": "Modern Chapter applique",
+    "category": "applications",
+    "price": 116,
+    "image": "light-22.jpg",
+    "color": "black"
+  },
+  {
+    "name": "Spot applique",
+    "category": "chandeliers",
+    "price": 79,
+    "image": "light-23.jpg",
+    "color": "black"
+  },
+  {
+    "name": "Gold Drop Chandelier",
+    "category": "chandeliers",
+    "price": 968,
+    "old-price": 639,
+    "image": "light-24.jpg",
+    "color": "yellow"
+  },
+  {
+    "name": "Gold Flower pendant",
+    "category": "chandeliers",
+    "price": 148,
+    "image": "light-25.jpg",
+    "color": "yellow"
+  },
+  {
+    "name": "Black Macrame pendant",
+    "category": "chandeliers",
+    "price": 78,
+    "image": "light-26.jpg",
+    "color": "black"
+  },
+  {
+    "name": "Black Spot chandelier",
+    "category": "chandeliers",
+    "price": 188,
+    "image": "light-27.png",
+    "color": "black"
+  },
+  {
+    "name": "Copper State Chandelier",
+    "category": "chandeliers",
+    "price": 194,
+    "image": "light-29.png",
+    "color": "brown"
+  },
+  {
+    "name": "Chandelier Multiple",
+    "category": "chandeliers",
+    "price": 836,
+    "image": "light-28.jpg",
+    "color": "white"
+  },
+  {
+    "name": "Black Net chandelier",
+    "category": "chandeliers",
+    "price": 104,
+    "image": "light-30.jpg",
+    "color": "black"
   }
 ]

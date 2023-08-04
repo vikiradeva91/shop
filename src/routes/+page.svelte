@@ -3,6 +3,23 @@
 
   let sorting = "Sort";
   let products = data;
+
+  let page = 1;
+  let filtered = { ...products };
+  filtered.length = 8;
+
+  function handleCategory(category) {
+    filtered = products.filter((item) => item.category == category);
+    console.log(filtered);
+  }
+
+  function handelMore() {
+    page++;
+    filtered = { ...products };
+    filtered.length = page * 8;
+    console.log(products);
+  }
+
   function handelSort() {
     if (sorting == "Price ascending") {
       products.sort((a, b) => a.price - b.price);
@@ -23,13 +40,17 @@
   }
 
   function handelColorSelect(color) {
-    products = data;
-    products = products.filter((item) => item.color == color);
+    filtered = data;
+    filtered = products.filter((item) => item.color == color);
     console.log(color);
   }
 
   function handelColorReset() {
-    products = data;
+    filtered = data;
+  }
+
+  function handelCategoryReset() {
+    filtered = data;
   }
 </script>
 
@@ -40,7 +61,7 @@
     <div class="flex-navbar">
       <div class="description">
         <h1>CHANDELIERS</h1>
-        <span>{products.length} Products</span>
+        <span>{filtered.length} Products</span>
       </div>
       <div class="sort-settings">
         <select
@@ -65,7 +86,7 @@
 
   <div id="main">
     <section class="d-flex">
-      {#each products as item}
+      {#each filtered as item}
         <div class="page-wrapper">
           <div class="page-inner">
             <div class="el-wrapper">
@@ -107,7 +128,9 @@
       {/each}
     </section>
     <div style="text-align: center; margin-top: 20px;">
-      <a href="/" class="button-more">Load More</a>
+      <a href="/" on:click|preventDefault={handelMore} class="button-more"
+        >Load More</a
+      >
     </div>
   </div>
 
@@ -131,23 +154,43 @@
         >
           <div>
             <input type="checkbox" value="*" id="all" />
-            <label class="button is-checked" for="all">All</label>
+            <label
+              on:click={handelCategoryReset}
+              class="button is-checked"
+              for="all">All</label
+            >
           </div>
           <div>
             <input type="checkbox" value=".new" id="new" />
-            <label class="button" for="new">Applications</label>
+            <label
+              on:click={() => handleCategory("applications")}
+              class="button"
+              for="new">Applications</label
+            >
           </div>
           <div>
             <input type="checkbox" value=".women" id="women" />
-            <label class="button" for="women">Lanterns</label>
+            <label
+              on:click={() => handleCategory("lanterns")}
+              class="button"
+              for="women">Lanterns</label
+            >
           </div>
           <div>
             <input type="checkbox" value=".men" id="men" />
-            <label class="button" for="men">Chandeliers</label>
+            <label
+              on:click={() => handleCategory("chandeliers")}
+              class="button"
+              for="men">Chandeliers</label
+            >
           </div>
           <div>
             <input type="checkbox" value=".men" id="men" />
-            <label class="button" for="men">Table Lamps</label>
+            <label
+              on:click={() => handleCategory("table-lamps")}
+              class="button"
+              for="men">Table Lamps</label
+            >
           </div>
         </div>
       </div>
@@ -156,8 +199,9 @@
         <input id="color" type="checkbox" />
         <label id="color-label" for="color"
           ><i class="down fa fa-caret-down" aria-hidden="true" />
-          Color</label
-        >
+          Color
+          <a href="/" on:click={handelColorReset}>Reset</a>
+        </label>
         <div
           id="color-button-group"
           class="button-group js-radio-button-group"
@@ -184,12 +228,6 @@
             class="color-circle button"
           />
         </div>
-        <a
-          href="/"
-          on:click={handelColorReset}
-          class="button"
-          style="margin-bottom: 30px;">Reset</a
-        >
       </div>
 
       <div class="filter-content show" id="collapse_3">
