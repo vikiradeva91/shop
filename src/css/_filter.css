@@ -39,6 +39,10 @@
   .flex-navbar .sort-settings {
     width: 192px;
   }
+
+  #filter .closebtn {
+    display: none;
+  }
 }
 
 @media only screen and (max-width: 921px) {
@@ -63,6 +67,9 @@
 
   #filter {
     display: none;
+    width: 100% !important;
+    box-sizing: border-box;
+    background-color: var(--white);
   }
 
   .flex-navbar .sort-settings {
@@ -95,24 +102,37 @@ main #filter .ui-group {
 main #filter .ui-group input[type="checkbox"] {
   display: none;
 }
-main #filter .ui-group > label {
+main #filter .ui-group > label,
+main #filter .ui-group .flex label {
   display: block;
   padding: 30px 0;
   cursor: pointer;
+  font-size: 15px;
+  text-decoration: underline;
 }
 main #filter .ui-group > label#category-label {
   padding-top: 0;
 }
-main #filter .ui-group > label i {
+/* main #filter .ui-group label i {
   margin-right: 15px;
   transition: all 0.2s ease-in-out;
+} */
+
+main #filter .ui-group .flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+main #filter .ui-group .flex .reset:hover {
+  color: var(--rose);
 }
 
 main #filter .down::before {
   content: "\f0d7";
 }
 
-main #filter .ui-group #category:checked + label > i {
+/* main #filter .ui-group #category:checked + label > i {
   transform: rotate(-90deg);
 }
 main #filter .ui-group #category:checked ~ .button-group {
@@ -132,7 +152,7 @@ main #filter .ui-group #price:checked + label > i {
 main #filter .ui-group #price:checked ~ .button-group {
   height: 0;
   margin-bottom: 0;
-}
+} */
 
 main #filter .ui-group .button-group {
   display: flex;
@@ -149,7 +169,7 @@ main #filter .ui-group .button-group .form-control {
   display: none;
 }
 main #filter .ui-group .button-group .button {
-  padding: 10px;
+  padding: 10px 10px 10px 0;
   opacity: 0.5;
   cursor: pointer;
   transition: all 0.2s ease-in-out;

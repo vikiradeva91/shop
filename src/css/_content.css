@@ -17,6 +17,10 @@ body {
   background: var(--rose);
 }
 
+.show {
+  display: block !important;
+}
+
 main {
   display: block;
   overflow: hidden;

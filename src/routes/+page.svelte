@@ -1,48 +1,56 @@
 <script>
   import data from "../json/products.json";
+  import { cart, alert } from "../store";
 
   let sorting = "Sort";
   let products = data;
 
   let page = 1;
-  let filtered = { ...products };
+  let filtered = [...products];
   filtered.length = 8;
 
-  function handleCategory(category) {
-    filtered = products.filter((item) => item.category == category);
+  let category = "all";
+
+  let showFilter = false;
+
+  function handleCategory(cat) {
+    filtered = products.filter((item) => item.category == cat);
+    category = cat;
     console.log(filtered);
   }
 
   function handelMore() {
     page++;
-    filtered = { ...products };
-    filtered.length = page * 8;
-    console.log(products);
+    filtered = [...products];
+    if (page * 8 < data.length) {
+      filtered.length = page * 8;
+    } else {
+      filtered.length = data.length;
+    }
   }
 
   function handelSort() {
     if (sorting == "Price ascending") {
-      products.sort((a, b) => a.price - b.price);
+      filtered.sort((a, b) => a.price - b.price);
     }
 
     if (sorting == "Price descending") {
-      products.sort((a, b) => a.price - b.price).reverse();
+      filtered.sort((a, b) => a.price - b.price).reverse();
     }
 
     if (sorting == "Alphabetical a-z") {
-      products.sort((a, b) => a.name.localeCompare(b.name));
+      filtered.sort((a, b) => a.name.localeCompare(b.name));
     }
 
     if (sorting == "Alphabetical z-a") {
-      products.sort((a, b) => a.name.localeCompare(b.name)).reverse();
+      filtered.sort((a, b) => a.name.localeCompare(b.name)).reverse();
     }
-    products = products;
+    filtered = filtered;
   }
 
   function handelColorSelect(color) {
     filtered = data;
     filtered = products.filter((item) => item.color == color);
-    console.log(color);
   }
 
   function handelColorReset() {
@@ -51,6 +59,15 @@
 
   function handelCategoryReset() {
     filtered = data;
+    category = "all";
+  }
+
+  function handleAddToCart() {
+    $cart++;
+    $alert = "Item added to cart.";
+    setTimeout(() => {
+      $alert = "";
+    }, "3000");
   }
 </script>
 
@@ -60,7 +77,7 @@
   <div id="navbar">
     <div class="flex-navbar">
       <div class="description">
-        <h1>CHANDELIERS</h1>
+        <h1>{category.toUpperCase()}</h1>
         <span>{filtered.length} Products</span>
       </div>
       <div class="sort-settings">
@@ -108,13 +125,17 @@
                 </div>
 
                 <a class="cart" href="/">
-                  <span class="new-price">${item.price}</span>
                   {#if item["old-price"]}
                     <span class="old-price">${item["old-price"]}</span>
+                    <span class="new-price">${item.price}</span>
+                  {:else}
+                    <span class="price">${item.price}</span>
                   {/if}
 
                   <span class="add-to-cart">
-                    <span class="txt">Add in cart</span>
+                    <span on:click|preventDefault={handleAddToCart} class="txt"
+                      >Add to cart</span
+                    >
                   </span>
                   <span class="heart"
                     ><picture><img src="/svg/heart.svg" alt="" /></picture
@@ -127,11 +148,13 @@
         </div>
       {/each}
     </section>
-    <div style="text-align: center; margin-top: 20px;">
-      <a href="/" on:click|preventDefault={handelMore} class="button-more"
-        >Load More</a
-      >
-    </div>
+    {#if filtered.length < data.length}
+      <div style="text-align: center; margin-top: 20px;">
+        <a href="/" on:click|preventDefault={handelMore} class="button-more"
+          >Load More</a
+        >
+      </div>
+    {/if}
   </div>
 
   <!-- MAIN END -->
@@ -139,14 +162,20 @@
   <!-- SIDEBAR -->
   <div id="sidebar">
     <div>
-      <a href="/" class="filter-btn"><span>Filter</span></a>
+      <a href="/" on:click={() => (showFilter = true)} class="filter-btn"
+        ><span>Filter</span></a
+      >
     </div>
-    <section id="filter">
+    <section id="filter" class:show={showFilter}>
       <div class="ui-group">
-        <input id="category" type="checkbox" />
-        <label id="category-label" for="category"
-          ><i class="down fa fa-caret-down" aria-hidden="true" />Category</label
-        >
+        <div class="flex">
+          <input id="category" type="checkbox" />
+          <label id="category-label" for="category">Category</label>
+          <span class="closebtn inverse" on:click={() => (showFilter = false)}
+            >&times;</span
+          >
+        </div>
+
         <div
           id="category-button-group"
           class="button-group js-radio-button-group"
@@ -196,12 +225,15 @@
       </div>
 
       <div class="ui-group">
-        <input id="color" type="checkbox" />
-        <label id="color-label" for="color"
-          ><i class="down fa fa-caret-down" aria-hidden="true" />
-          Color
-          <a href="/" on:click={handelColorReset}>Reset</a>
-        </label>
+        <div class="flex">
+          <input id="color" type="checkbox" />
+          <label id="color-label" for="color">Color </label><a
+            class="reset"
+            href="/"
+            on:click={handelColorReset}>Reset</a
+          >
+        </div>
+
         <div
           id="color-button-group"
           class="button-group js-radio-button-group"
@@ -233,9 +265,7 @@
       <div class="filter-content show" id="collapse_3">
         <div class="ui-group card-body">
           <input id="price" type="checkbox" />
-          <label id="price-label" for="price">
-            <i class="down fa fa-caret-down" aria-hidden="true" />Price</label
-          >
+          <label id="price-label" for="price">Price</label>
           <div class="form-row button-group">
             <input
               type="range"

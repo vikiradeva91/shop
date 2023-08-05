@@ -251,7 +251,6 @@
   -o-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   font-size: 16px;
-  color: var(--gray);
 }
 
 .cart .new-price,

@@ -153,3 +153,22 @@ header nav .dropdown > div a {
     margin-bottom: 10px;
   }
 }
+.icon-set-header a:last-child {
+  position: relative;
+}
+.count {
+  display: inline-block;
+  position: absolute;
+  top: -3px;
+  left: 12px;
+  font-style: normal;
+  font-size: 11px;
+  line-height: 15px;
+  color: #fff;
+  background-color: var(--rose);
+  border-radius: 10px;
+  height: 16px;
+  width: 16px;
+  text-align: center;
+  pointer-events: none;
+}

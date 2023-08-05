@@ -1,5 +1,6 @@
 <script>
   import "../css/index.css";
+  import { alert, cart } from "../store";
 
   let visible = false;
 </script>
@@ -76,6 +77,7 @@
           <a href="/">
             <picture>
               <img src="svg/cart.svg" alt="" />
+              <span class="count">{$cart}</span>
             </picture>
           </a>
         </div>
@@ -88,6 +90,12 @@
 </header>
 
 <main>
+  {#if $alert}
+    <div class="alert">
+      <span on:click={() => ($alert = "")} class="closebtn">&times;</span>
+      {$alert}
+    </div>
+  {/if}
   <slot />
 </main>
 
