@@ -119,7 +119,7 @@
     <section>
       <div>Copyright © 2023 All rights reserved!</div>
       <!-- svelte-ignore a11y-missing-attribute -->
-      <div><a href="/" target="_blank"><img src="/svg/user.svg" /></a></div>
+      <div><a href="/" target="_blank"><img src="/svg/star.svg" /></a></div>
     </section>
   </div>
 </footer>

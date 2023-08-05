@@ -6,14 +6,13 @@ body {
 }
 :root {
   --rose: #d19c97;
-  --light: #edf1ff;
-  --white: #fff;
+  --light: #ebefff;
   --gray: #7a7a7a;
   --black: #000;
 }
 
 ::selection {
-  color: var(--white);
+  color: white;
   background: var(--rose);
 }
 
@@ -128,7 +127,7 @@ button.button {
   /* border-radius: 4px; */
   background-color: var(--rose);
   cursor: pointer;
-  color: var(--white);
+  color: white;
 
   font-family: Roboto, sans-serif;
   font-weight: 300;

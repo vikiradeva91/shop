@@ -69,7 +69,7 @@
     display: none;
     width: 100% !important;
     box-sizing: border-box;
-    background-color: var(--white);
+    background-color: white;
   }
 
   .flex-navbar .sort-settings {
@@ -209,8 +209,9 @@ main #filter .ui-group:nth-of-type(2) .button-group {
   flex-direction: row;
   flex-wrap: wrap;
   align-content: center;
-  height: 80px;
+  height: 30px;
   margin-bottom: 30px;
+  justify-content: center;
 }
 
 main #filter .form-row > div {

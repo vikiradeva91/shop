@@ -17,6 +17,10 @@ footer .flex-footer {
   padding-top: 20px;
 }
 
+footer .flex-footer a:hover {
+  color: var(--rose);
+}
+
 footer .flex-footer div {
   padding: 0 15px;
 }
